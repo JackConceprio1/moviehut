@@ -23,11 +23,11 @@ class ContainerButton extends StatelessWidget {
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(8),
-        color: Colors.blue,
+        color: color,
       ),
       child: Center(
         child: Text(
-          "Login",
+          text,
           style: GoogleFonts.rubik(color: Colors.white),
         ),
       ),
