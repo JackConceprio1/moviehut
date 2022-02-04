@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 // add google fonts
 import 'package:google_fonts/google_fonts.dart';
+import 'package:moviehut/widgets/ContainerButton.dart';
 import 'package:moviehut/widgets/InputBox.dart';
 class LoginScreen extends StatelessWidget {
   const LoginScreen({ Key? key }) : super(key: key);
@@ -42,21 +43,10 @@ class LoginScreen extends StatelessWidget {
                 child: TextButton(onPressed: null, child: Text("Forgot Password?", style: GoogleFonts.rubik(),)),
               ),
               const SizedBox(height: 12),
-              Container(
-                width: double.infinity,
-                padding: const EdgeInsets.all(12),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8),
-                  color: Colors.blue,
-                ),
-                child: Center(child: Text("Login",style: GoogleFonts.rubik(color: Colors.white),),),),
-        
+              const ContainerButton(text: "Login", color: Colors.blue, isClickable: true, onPressed: null,),
               const SizedBox(height: 24),
               Text("Don't have an account? Sign up",style: GoogleFonts.rubik(),),
               const SizedBox(height: 24),
-              
-              
-        
             ],
           ),
         ),
@@ -65,4 +55,6 @@ class LoginScreen extends StatelessWidget {
     
   }
 }
+
+
 
